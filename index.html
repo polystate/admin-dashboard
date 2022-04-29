@@ -9,11 +9,26 @@
   </head>
   <body>
     <header>
-      <ul>
-        <li><span>Icon</span><input type="text" /></li>
-        <li><span>Icon</span></li>
-        <li><img src="" alt="image description" /></li>
-        <li><p class="welcome-text">Morgan Oakley</p></li>
+      <ul class="upper-nav">
+        <li id="search-bar-sect">
+          <img
+            class="search-icon"
+            src="./icons/cloud-search-outline.png"
+          /><input id="search-bar" type="text" />
+        </li>
+        <ul class="user-nav">
+          <li>
+            <img class="search-icon" src="./icons/bell-badge-outline.png" />
+          </li>
+          <li>
+            <img
+              class="avatar"
+              src="./icons/avatar.png"
+              alt="image description"
+            />
+          </li>
+          <li><p class="user-name">Morgan Oakley</p></li>
+        </ul>
       </ul>
       <p>Icon Bigger</p>
       <p class="welcome-text">Hi there,</p>
@@ -25,17 +40,70 @@
       </ul>
     </header>
     <nav>
-      <h1><span class="nav-icon">Icon</span>Dashboard</h1>
       <ul id="nav-links">
-        <li class="nav-link"><span class="nav-icon">Icon</span>Home</li>
-        <li class="nav-link"><span class="nav-icon">Icon</span>Profile</li>
-        <li class="nav-link"><span class="nav-icon">Icon</span>Messages</li>
-        <li class="nav-link"><span class="nav-icon">Icon</span>History</li>
-        <li class="nav-link"><span class="nav-icon">Icon</span>Tasks</li>
-        <li class="nav-link"><span class="nav-icon">Icon</span>Communities</li>
-        <li class="nav-link"><span class="nav-icon">Icon</span>Settings</li>
-        <li class="nav-link"><span class="nav-icon">Icon</span>Support</li>
-        <li class="nav-link"><span class="nav-icon">Icon</span>Privacy</li>
+        <li class="nav-link">
+          <!-- <span class="nav-icon">Icon</span> -->
+          <h1 class="dash-link">Dashboard</h1>
+        </li>
+        <li class="nav-link">
+          <img class="nav-icon" src="./icons/home-city-outline.png" />
+          <a class="dash-link" href="#">Home</a>
+        </li>
+        <li class="nav-link">
+          <img class="nav-icon" src="./icons/face-man-profile.png" /><a
+            class="dash-link"
+            href="#"
+            >Profile</a
+          >
+        </li>
+        <li class="nav-link">
+          <img class="nav-icon" src="./icons/android-messages.png" /><a
+            class="dash-link"
+            href="#"
+            >Messages</a
+          >
+        </li>
+        <li class="nav-link">
+          <img
+            class="nav-icon"
+            src="./icons/clipboard-text-clock-outline.png"
+          /><a class="dash-link" href="#">History</a>
+        </li>
+        <li class="nav-link">
+          <img class="nav-icon" src="./icons/file-tree.png" /><a
+            class="dash-link"
+            href="#"
+            >Tasks</a
+          >
+        </li>
+        <li class="nav-link">
+          <img class="nav-icon" src="./icons/account-group-outline.png" /><a
+            class="dash-link"
+            href="#"
+            >Communities</a
+          >
+        </li>
+        <li class="nav-link">
+          <img class="nav-icon" src="./icons/cog-sync-outline.png" /><a
+            class="dash-link"
+            href="#"
+            >Settings</a
+          >
+        </li>
+        <li class="nav-link">
+          <img class="nav-icon" src="./icons/lifebuoy.png" /><a
+            class="dash-link"
+            href="#"
+            >Support</a
+          >
+        </li>
+        <li class="nav-link">
+          <img class="nav-icon" src="./icons/vpn.png" /><a
+            class="dash-link"
+            href="#"
+            >Privacy</a
+          >
+        </li>
       </ul>
     </nav>
     <section id="main-content">
