@@ -30,14 +30,27 @@
           <li><p class="user-name">Morgan Oakley</p></li>
         </ul>
       </ul>
-      <p>Icon Bigger</p>
-      <p class="welcome-text">Hi there,</p>
-      <p class="welcome-text">Morgan Oakley (@morgan)</p>
-      <ul>
-        <li><button>New</button></li>
-        <li><button>Upload</button></li>
-        <li><button>Share</button></li>
-      </ul>
+      <section id="user-panel">
+        <div id="welcome-user">
+          <img
+            id="avatar-big"
+            class="avatar"
+            src="./icons/avatar.png"
+            alt="image description"
+          />
+          <p class="welcome-text">
+            Hi there,<br />
+            <span class="user-name" style="color: black"
+              >Morgan Oakley (@morgan)</span
+            >
+          </p>
+        </div>
+        <ul id="user-actions">
+          <li><button>New</button></li>
+          <li><button>Upload</button></li>
+          <li><button>Share</button></li>
+        </ul>
+      </section>
     </header>
     <nav>
       <ul id="nav-links">
@@ -106,19 +119,21 @@
         </li>
       </ul>
     </nav>
-    <section id="main-content">
-      <section id="projects">
+    <section id="projects">
+      <div class="content-header">
         <h2>Your Projects</h2>
+      </div>
+      <div id="card-grid">
         <div class="card">
           <p class="card-header">Super Cool Project</p>
           <p class="sub-text">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab
             voluptatum, saepe vel.
           </p>
-          <ul>
-            <li><span>Icon</span></li>
-            <li><span>Icon</span></li>
-            <li><span>Icon</span></li>
+          <ul class="card-icons">
+            <li><img src="./icons/star.png" /></li>
+            <li><img src="./icons/account-star.png" /></li>
+            <li><img src="./icons/clipboard-text-multiple.png" /></li>
           </ul>
         </div>
         <div class="card">
@@ -127,10 +142,10 @@
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab
             voluptatum, saepe vel.
           </p>
-          <ul>
-            <li><span>Icon</span></li>
-            <li><span>Icon</span></li>
-            <li><span>Icon</span></li>
+          <ul class="card-icons">
+            <li><img src="./icons/star.png" /></li>
+            <li><img src="./icons/account-star.png" /></li>
+            <li><img src="./icons/clipboard-text-multiple.png" /></li>
           </ul>
         </div>
         <div class="card">
@@ -139,10 +154,10 @@
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab
             voluptatum, saepe vel.
           </p>
-          <ul>
-            <li><span>Icon</span></li>
-            <li><span>Icon</span></li>
-            <li><span>Icon</span></li>
+          <ul class="card-icons">
+            <li><img src="./icons/star.png" /></li>
+            <li><img src="./icons/account-star.png" /></li>
+            <li><img src="./icons/clipboard-text-multiple.png" /></li>
           </ul>
         </div>
         <div class="card">
@@ -151,10 +166,10 @@
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab
             voluptatum, saepe vel.
           </p>
-          <ul>
-            <li><span>Icon</span></li>
-            <li><span>Icon</span></li>
-            <li><span>Icon</span></li>
+          <ul class="card-icons">
+            <li><img src="./icons/star.png" /></li>
+            <li><img src="./icons/account-star.png" /></li>
+            <li><img src="./icons/clipboard-text-multiple.png" /></li>
           </ul>
         </div>
         <div class="card">
@@ -163,10 +178,10 @@
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab
             voluptatum, saepe vel.
           </p>
-          <ul>
-            <li><span>Icon</span></li>
-            <li><span>Icon</span></li>
-            <li><span>Icon</span></li>
+          <ul class="card-icons">
+            <li><img src="./icons/star.png" /></li>
+            <li><img src="./icons/account-star.png" /></li>
+            <li><img src="./icons/clipboard-text-multiple.png" /></li>
           </ul>
         </div>
         <div class="card">
@@ -175,27 +190,31 @@
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab
             voluptatum, saepe vel.
           </p>
-          <ul>
-            <li><span>Icon</span></li>
-            <li><span>Icon</span></li>
-            <li><span>Icon</span></li>
+          <ul class="card-icons">
+            <li><img src="./icons/star.png" /></li>
+            <li><img src="./icons/account-star.png" /></li>
+            <li><img src="./icons/clipboard-text-multiple.png" /></li>
           </ul>
         </div>
-      </section>
+      </div>
     </section>
     <section id="announcements">
-      <h2>Announcements</h2>
+      <div class="content-header">
+        <h2>Announcements</h2>
+      </div>
       <div class="right-content">
         <p class="right-header">Site Maintenance</p>
         <p class="right-text">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus,
           quidem!
         </p>
+        <hr />
         <p class="right-header">Community Share Day</p>
         <p class="right-text">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Id ratione
           nihil repudiandae.
         </p>
+        <hr />
         <p class="right-header">Updated Privacy Policy</p>
         <p class="right-text">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
@@ -204,7 +223,9 @@
       </div>
     </section>
     <section id="trending">
-      <h2>Trending</h2>
+      <div id="trending-header" class="content-header">
+        <h2>Trending</h2>
+      </div>
       <div class="right-content">
         <div class="screen-name">
           <i>Icon</i>
