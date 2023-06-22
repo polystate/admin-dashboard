@@ -4,6 +4,13 @@
   --main-text: white;
 }
 
+html, body{
+  height: 100%;
+  width: 100%;
+  /* margin: 0;
+  padding: 0; */
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -16,8 +23,8 @@ li {
 body {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(5, 1fr);
-  height: 100vh;
+  grid-template-rows: repeat(6, 1fr);
+  background-color: var(--content-bg);
 }
 
 /*Header*/
@@ -99,6 +106,7 @@ header {
   gap: 1rem;
   margin-left: 3rem;
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  padding: 0.5rem;
 }
 
 #avatar-big {
@@ -139,7 +147,7 @@ nav {
   flex-direction: column;
   background: var(--dashboard-bg);
   align-items: center;
-  height: 100%;
+  height: 155%;
 }
 
 h1 {
@@ -178,13 +186,18 @@ h1 {
   background-color: var(--content-bg);
 }
 
+#project-header{
+  text-align: center;
+}
+
 #card-grid {
   display: grid;
   grid-template-rows: repeat(3, 1fr);
   grid-template-columns: repeat(2, 1fr);
-  height: 100%;
+  height: 100vh;
   gap: 1.5rem;
   margin: 0 1.5rem 0 1.5rem;
+  scroll-behavior: smooth;
 }
 
 .content-header {
@@ -226,6 +239,9 @@ h1 {
   grid-row: 2 / 4;
   grid-column: 5 / 6;
   background-color: var(--content-bg);
+  text-align: center;
+  scroll-behavior: smooth;
+  height: 10rem;
 }
 
 .right-header {
@@ -247,6 +263,15 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  /* scroll-behavior: smooth; */
+  margin-right: 1rem;
+}
+
+#fix-right{
+  /* scroll-behavior: auto; */
+  overflow: auto;
+  /* scroll-behavior: auto; */
+  height: 100%;
 }
 
 /*Trending*/
@@ -259,6 +284,8 @@ h1 {
 
 #trending-header {
   margin-top: auto;
+  text-align: center;
+  margin-top: 8rem;
 }
 
 .screen-name {
